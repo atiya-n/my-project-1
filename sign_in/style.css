@@ -1,0 +1,19 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/0a2b255daa755f06dc3d1c55ff47402b.jpg);
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-cont{
+    width: 40%;
+    height: 550px;
+}
+
+.login:hover{
+    transform: scale(1.1);
+}
