@@ -26,3 +26,21 @@ body{
     transform: scale(1.1);
 }
 
+.neon-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 40px blue, 0 0 80px white;
+    /* animation: glow 1.5s infinite alternate; */
+}
+
+.neon-text1{
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white;
+}
+
+.neon-text2{
+    font-size: 4rem;
+    color: grey;
+    text-shadow: 0 0 5px grey, 0 0 10px grey, 0 0 20px grey, 0 0 40px grey, 0 0 80px grey;
+}
