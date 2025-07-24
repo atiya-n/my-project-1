@@ -6,53 +6,322 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Sphere</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="body-card">
     <!-- nav section starts -->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">AN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+    <nav>
+        <div
+            class="container-fluid nav-container p-2 text-light d-flex justify-content-between align-items-center mt-2  ">
+
+            <span class="neon-text ms-5 fs-2 ">Link Sphere <span class="fw-light fs-6 fst-italic ms-2"> Connect . Link . Socialize </span></span>
+
+            <div class=" dropdown">
+                <a class="nav-link dropdown-toggle me-3" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Discover
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#id_popular">Popular Trends</a></li>
+                    <li><a class="dropdown-item" href="#id_sperks">Sperks </a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="/sign_in/">Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- nav section ends -->
+
+    <!-- body section starts -->
+    <div class="container-fluid p-5 mt-5 " id="id_popular">
+
+        <h1 class="text-white text-center mb-5 display-2 fst-italic text-decoration-underline neon-text">Popular Trends</h1>
+        
+        <div class="d-flex justify-content-evenly">
+
+        <div class="card border mt-5" style="width:30%; height: 500px;">
+            <div class="card-body">
+                <div class="d-flex position-relative">
+                    <div class=" body-img"> 
+                        <img class="border rounded-circle"   src="./images/istockphoto-1496615445-612x612.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="card-title ms-3">Esther Howard</h5>
+                        <span class="ms-4 mt-0 fw-light text-secondary card-time">Just now</span>
+                    </div>
+                    <i class="fa-brands fa-facebook text-primary fs-3 position-absolute top-0 end-0"></i>
+                </div>
+                <p class="mt-4 text-black">There's something magical about that first sip of morning coffee. ☕ The rich aroma, warmth of the cup in your hand... <br>
+                    <span class="text-primary">Read more</span>
+                </p>
+                <div class="card-img">
+                    <img src="./images/free-photo-of-hand-holding-cup-of-cappuccino.jpeg" alt="">
                 </div>
             </div>
-        </nav>
+            <div class="d-flex position-relative">
+                <div class="d-flex justify-content-start align-items-center mb-3 ms-4">
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    <span class="ms-1">128</span>
+                </div>
+                <div class="d-flex  align-items-center mb-3 ms-4">
+                   <i class="fa-regular fa-comment fs-4"></i> 
+                   <span class="ms-1">3</span>
+                </div>
+                <div class="d-flex align-items-center mb-3 position-absolute top-0 end-0 me-4 ">
+                   <i class="fa-solid fa-share fs-4"></i>
+                   <span class="ms-1">Share</span>
+                </div>
+
+            </div>
+        </div>
+        
+
+
+        <div class="card border mt-5" style="width:30%; height: 500px;">
+            <div class="card-body">
+                <div class="d-flex position-relative">
+                    <div class=" body-img"> 
+                        <img class="border rounded-circle"   src="./images/bearded-man-wearing-red-beanie_23-2148378557.avif" alt="">
+                    </div>
+                    <div>
+                        <h5 class="card-title ms-3">Devon Lane</h5>
+                        <span class="ms-4 mt-0 fw-light text-secondary card-time">3 hours ago</span>
+                    </div>
+                    <i class="fa-brands fa-instagram text-danger fs-3 position-absolute top-0 end-0"></i>
+                </div>
+                <p class="mt-4 text-black">Dazzeled by the energy of the crowds, flashing billboards, and the spirit of New York City at night. #streetphotography #timesquareNY<br>
+                </p>
+                <div class="card-img mt-5">
+                    <img src="./images/istockphoto-523538287-612x612.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex position-relative">
+                <div class="d-flex justify-content-start align-items-center mb-3 ms-4">
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    <span class="ms-1">365</span>
+                </div>
+                <div class="d-flex  align-items-center mb-3 ms-4">
+                   <i class="fa-regular fa-comment fs-4"></i> 
+                   <span class="ms-1">28</span>
+                </div>
+                <div class="d-flex align-items-center mb-3 position-absolute top-0 end-0 me-4 ">
+                   <i class="fa-solid fa-share fs-4"></i>
+                   <span class="ms-1">Share</span>
+                </div>
+
+            </div>
+        </div>
+
+
+         <div class="card border mt-5" style="width:30%; height: 500px;">
+            <div class="card-body">
+                <div class="d-flex position-relative">
+                    <div class=" body-img"> 
+                        <img class="border rounded-circle"   src="./images/4dd6f0e9d2a182c8d74940ce70e3feaa.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="card-title ms-3">Theresa Webb</h5>
+                        <span class="ms-4 mt-0 fw-light text-secondary card-time">2 days ago</span>
+                    </div>
+                    <i class="fa-brands fa-x-twitter text-dark fs-3 position-absolute top-0 end-0"></i>
+                </div>
+                <p class="mt-4 text-black">While wandering the streets today, I could'nt help but be captivated by the beauty of everyday moments and....<br>
+                    <span class="text-primary">Read more</span>
+                </p>
+                <div class="card-img">
+                    <img src="./images/webpc-passthru.webp" alt="">
+                </div>
+            </div>
+            <div class="d-flex position-relative">
+                <div class="d-flex justify-content-start align-items-center mb-3 ms-4">
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    <span class="ms-1">202</span>
+                </div>
+                <div class="d-flex  align-items-center mb-3 ms-4">
+                   <i class="fa-regular fa-comment fs-4"></i> 
+                   <span class="ms-1">14</span>
+                </div>
+                <div class="d-flex align-items-center mb-3 position-absolute top-0 end-0 me-4 ">
+                   <i class="fa-solid fa-share fs-4"></i>
+                   <span class="ms-1">Share</span>
+                </div>
+
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+ <div class="container-fluid p-5 mt-3 " >
+        
+        <div class="d-flex justify-content-evenly">
+
+        <div class="card border mt-5" style="width:30%; height: 500px;">
+            <div class="card-body">
+                <div class="d-flex position-relative">
+                    <div class=" body-img"> 
+                        <img class="border rounded-circle"   src="./images/dark-haired-man-in-brown-leather-jacket.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="card-title ms-3">Ivor Watson</h5>
+                        <span class="ms-4 mt-0 fw-light text-secondary card-time">2 weeks ago</span>
+                    </div>
+                    <i class="fa-brands fa-instagram text-danger fs-3 position-absolute top-0 end-0"></i>
+                </div>
+                <p class="mt-4 text-black"> 🍴😋There's nothing quite like the satisfaction of creating a delicious christmas dinner #foodvlog #Homecooking #christmas <br>
+                </p>
+                <div class="card-img mt-5">
+                    <img src="./images/christmas-dinner-2021-cover-720x405.webp" alt="">
+                </div>
+            </div>
+            <div class="d-flex position-relative">
+                <div class="d-flex justify-content-start align-items-center mb-3 ms-4">
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    <span class="ms-1">509</span>
+                </div>
+                <div class="d-flex  align-items-center mb-3 ms-4">
+                   <i class="fa-regular fa-comment fs-4"></i> 
+                   <span class="ms-1">9</span>
+                </div>
+                <div class="d-flex align-items-center mb-3 position-absolute top-0 end-0 me-4 ">
+                   <i class="fa-solid fa-share fs-4"></i>
+                   <span class="ms-1">Share</span>
+                </div>
+
+            </div>
+        </div>
+        
+
+
+        <div class="card border mt-5" style="width:30%; height: 500px;">
+            <div class="card-body">
+                <div class="d-flex position-relative">
+                    <div class=" body-img"> 
+                        <img class="border rounded-circle"   src="./images/liam-payne-1-6710349161b12.avif" alt="">
+                    </div>
+                    <div>
+                        <h5 class="card-title ms-3">Liam Payne</h5>
+                        <span class="ms-4 mt-0 fw-light text-secondary card-time">7 hours ago</span>
+                    </div>
+                    <i class="fa-brands fa-instagram text-danger fs-3 position-absolute top-0 end-0"></i>
+                </div>
+                <p class="mt-4 text-black">Starting day with ice starbucks with my buddy!!!. Heading out for shoot day. Super excited. Cant wait to meet the fam for a new tour. :)<br>
+                </p>
+                <div class="card-img mt-5">
+                    <img src="./images/Starbucks-i.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex position-relative">
+                <div class="d-flex justify-content-start align-items-center mb-3 ms-4">
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    <span class="ms-1">2.25k</span>
+                </div>
+                <div class="d-flex  align-items-center mb-3 ms-4">
+                   <i class="fa-regular fa-comment fs-4"></i> 
+                   <span class="ms-1">3k</span>
+                </div>
+                <div class="d-flex align-items-center mb-3 position-absolute top-0 end-0 me-4 ">
+                   <i class="fa-solid fa-share fs-4"></i>
+                   <span class="ms-1">Share</span>
+                </div>
+
+            </div>
+        </div>
+
+
+         <div class="card border mt-5" style="width:30%; height: 500px;">
+            <div class="card-body">
+                <div class="d-flex position-relative">
+                    <div class=" body-img"> 
+                        <img class="border rounded-circle"   src="./images/Qualities-Of-A-Good-Woman-What-Makes-Them-Fiercely-Humble-1.jpg.webp" alt="">
+                    </div>
+                    <div>
+                        <h5 class="card-title ms-3">Fiona Watson</h5>
+                        <span class="ms-4 mt-0 fw-light text-secondary card-time">2 days ago</span>
+                    </div>
+                    <i class="fa-brands fa-facebook text-primary fs-3 position-absolute top-0 end-0"></i>
+                </div>
+                <p class="mt-4 text-black">Crazy to think the Game of Thrones pilot was partly shot in Scotland—feels so surreal given how iconic the Northern...<br>
+                    <span class="text-primary">Read more</span>
+                </p>
+                <div class="card-img">
+                    <img src="./images/Old-Man-of-Storr-closer.jpg" alt="">
+                </div>
+            </div>
+            <div class="d-flex position-relative">
+                <div class="d-flex justify-content-start align-items-center mb-3 ms-4">
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    <span class="ms-1">2,583</span>
+                </div>
+                <div class="d-flex  align-items-center mb-3 ms-4">
+                   <i class="fa-regular fa-comment fs-4"></i> 
+                   <span class="ms-1">21</span>
+                </div>
+                <div class="d-flex align-items-center mb-3 position-absolute top-0 end-0 me-4 ">
+                   <i class="fa-solid fa-share fs-4"></i>
+                   <span class="ms-1">Share</span>
+                </div>
+
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
+
+    <div class="container" id="id_sperks">
+
+        <h1 class="text-white text-center mb-5 mt-5 display-2 fst-italic text-decoration-underline neon-text">Sperks</h1>
+
+        <div class="d-flex justify-content-evenly mt-5">
+
+        <div class="sperks-card border border-info border-5 rounded-5 bg-primary p-3 text-center">
+            <p class="text-light text-center fw-bold fs-5 "># Anny Levon</p> <hr class="border border-light border-2 opacity-50">
+            <p class="text-light">"Trump's latest moves show he's doubling down on executive power"</p>
+        </div>
+
+        <div class="sperks-card border border-info border-5 rounded-5 bg-primary p-3 text-center">
+            <p class="text-light text-center fw-bold fs-5 "># William Zucker</p> <hr class="border border-light border-2 opacity-50">
+            <p class="text-light">“The Seine River is now open for swimming in Paris—first time since 1923. Swim, anyone?”</p>
+        </div>
+
+        <div class="sperks-card border border-info border-5 rounded-5 bg-primary p-3 text-center">
+            <p class="text-light text-center fw-bold fs-5 "># Eva Saan</p> <hr class="border border-light border-2 opacity-50">
+            <p class="text-light">“Eva Air tops global cleanliness charts—take that, tray‑table germs!”</p>
+        </div>
+
+        <div class="sperks-card border border-info border-5 rounded-5 bg-primary p-3 text-center">
+            <p class="text-light text-center fw-bold fs-5 "># Marco Polo</p> <hr class="border border-light border-2 opacity-50">
+            <p class="text-light">"Ty Nichols dropped 36 clutch points and sealed the win. Great homecoming!!"</p>
+        </div>
+
+        </div>
+
+    </div>
+
+    <!-- body section ends -->
+
+    <!-- footer section starts -->
+
+    <div class="container-fluid footer-container border bg-black text-light border-black mt-5 fw-light">
+        <p>@LinkSphere est since 2025. Valid documentation</p>
+    </div>
+
+    <!-- footer section ends -->
+
 
 </body>
 
