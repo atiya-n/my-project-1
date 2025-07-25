@@ -1,6 +1,6 @@
 
 .profile-img{
-    width: 18%;
+    width: 20%;
     height: 200px;
 }
 
@@ -16,9 +16,23 @@
 }
 
 .container-body{
-    width: 50%;
-    height: 700px;
+    width: 100%;
+    height: 800px;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
 }
+
+.text-style{
+    width: 50%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.button{
+    position:absolute;
+    top: 55%;
+}
+
